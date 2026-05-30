@@ -1,0 +1,25 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/GameServiceTest.java",
+      "testCases": [
+        {
+          "methodName": "gameServiceTest1",
+          "label": "Verifies checkGuess returns false for incorrect guess",
+          "description": "Sets secretNumber to 3.14 and checks that checkGuess(2.71) returns false."
+        },
+        {
+          "methodName": "gameServiceTest2",
+          "label": "Verifies checkGuess returns true for correct guess",
+          "description": "Sets secretNumber to 3.14 and verifies that checkGuess(3.14) returns true."
+        },
+        {
+          "methodName": "gameServiceTest3",
+          "label": "Verifies checkGuess returns false when guess no longer matches",
+          "description": "Changes secretNumber to 2.71 and confirms that checkGuess(3.14) now returns false."
+        }
+      ]
+    }
+  ]
+}
